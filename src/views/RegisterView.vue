@@ -111,15 +111,16 @@ function handleRegister() {
   align-items: center;
   justify-content: center;
   padding: 24px;
+  background-color: white;
 }
 
 .auth-card {
   width: 100%;
   max-width: 420px;
-  background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
   padding: 22px;
+  box-shadow: 0 0 7px #00ff00, 0 0 8px #00ff00;
 }
 
 h2 {
