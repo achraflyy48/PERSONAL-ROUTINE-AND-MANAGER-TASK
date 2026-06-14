@@ -28,7 +28,7 @@ Make sure you have Node.js installed on your local machine.
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/username/personal-routine-task-manager.git](https://github.com/username/personal-routine-task-manager.git)
+   git clone https://github.com/achraflyy48/PERSONAL-ROUTINE-AND-MANAGER-TASK.git
 
 2. Navigate to the project directory:
    ```bash
