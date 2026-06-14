@@ -93,6 +93,7 @@ h2 {
   justify-content: center;
   display: flex;
   font-weight: 900;
+  color: black;
 }
 
 .muted {
@@ -115,6 +116,7 @@ h2 {
   gap: 6px;
   font-weight: 700;
   font-size: 0.95rem;
+  color: black;
 }
 
 .input {

@@ -126,11 +126,19 @@ function handleRegister() {
 h2 {
   margin: 0;
   font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: black;
+  font-weight: 900;
 }
 
 .muted {
   color: var(--text-muted);
   margin: 8px 0 18px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 .form {
@@ -145,6 +153,7 @@ h2 {
   gap: 6px;
   font-weight: 700;
   font-size: 0.95rem;
+  color: black;
 }
 
 .input {
