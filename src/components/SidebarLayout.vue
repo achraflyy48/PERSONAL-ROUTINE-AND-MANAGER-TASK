@@ -90,8 +90,9 @@ function handleLogout() {
   color: var(--text);
   padding: 1rem 2rem;
   overflow: auto;
-  min-height: 100vh;
+  min-height: 0;
 }
+
 
 
 
