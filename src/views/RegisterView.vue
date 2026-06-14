@@ -63,12 +63,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useAuthStore } from '../stores/authStore';
 
 const router = useRouter();
 const auth = useAuthStore();
+
+onMounted(() => {
+  // paksa light mode untuk login/register
+  document.documentElement.setAttribute('data-theme', 'light')
+});
+
 
 const username = ref('');
 const password = ref('');
