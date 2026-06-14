@@ -79,4 +79,9 @@ const days = computed(() => {
 @media (max-width: 768px){
   .calendar-grid{ grid-template-columns: 1fr; }
 }
+
+@media (max-width: 420px){
+  .day{ min-height: 120px; padding: .65rem; }
+  .day-num{ font-size: 1.25rem; }
+}
 </style>

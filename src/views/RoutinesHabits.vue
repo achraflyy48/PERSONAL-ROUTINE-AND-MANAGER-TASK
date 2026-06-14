@@ -88,7 +88,7 @@ const deleteHabit = (id) => {
   flex-wrap:wrap;
   margin-bottom:1rem;
 }
-.input{ padding:.6rem .75rem; border-radius:12px; border:1px solid var(--card-border); background:#fff; min-width: 220px; }
+.input{ padding:.6rem .75rem; border-radius:12px; border:1px solid var(--card-border); background:#fff; min-width: 0; width: clamp(160px, 26vw, 220px); }
 .select{ padding:.6rem .75rem; border-radius:12px; border:1px solid var(--card-border); background:#fff; }
 .color{ width:44px; height:38px; border:none; padding:0; background:transparent; }
 .btn{ padding:.7rem .9rem; border-radius:12px; border:none; cursor:pointer; background: rgba(52,211,153,.18); color: var(--accent); font-weight:800; }
@@ -98,7 +98,13 @@ const deleteHabit = (id) => {
 .habit{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.75rem; border-radius: 14px; border:1px solid rgba(2,6,23,.08); background: rgba(2,6,23,.02); }
 .habit-main{ display:flex; align-items:center; gap:.8rem; cursor:pointer; flex:1; }
 
-.check{ width:28px; height:28px; border-radius:10px; border:1px solid rgba(2,6,23,.15); background:#fff; display:flex; align-items:center; justify-content:center; flex:0 0 auto; }
+
+@media (max-width: 420px){
+  .habit{ gap:.5rem; padding:.6rem; }
+  .color{ width:36px; }
+}
+
+.check{ width:clamp(22px, 4.8vw, 28px); height:clamp(22px, 4.8vw, 28px); border-radius:10px; border:1px solid rgba(2,6,23,.15); background:#fff; display:flex; align-items:center; justify-content:center; flex:0 0 auto; }
 .check-icon{ color: var(--accent); font-weight:900; }
 .habit-title{ font-weight:800; }
 .habit-meta{ color: var(--text-muted); font-size:.85rem; margin-top:.15rem; }

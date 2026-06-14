@@ -78,6 +78,12 @@ const addQuick = () => {
 .hint{ margin-top:.75rem; color: var(--text-muted); font-size:.9rem; }
 
 @media (max-width:768px){ .grid{ grid-template-columns:1fr; } }
+
+@media (max-width:420px){
+  .card{ padding:.85rem; }
+  .form{ gap:.5rem; }
+}
+
 </style>
 
 

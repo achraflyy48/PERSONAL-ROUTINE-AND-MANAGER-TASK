@@ -203,8 +203,8 @@ function handleChangePassword() {
 }
 
 .avatar {
-  width: 72px;
-  height: 72px;
+  width: clamp(54px, 10vw, 72px);
+  height: clamp(54px, 10vw, 72px);
   border-radius: 18px;
   object-fit: cover;
   border: 1px solid var(--card-border);

@@ -68,7 +68,7 @@ const todayTasks = computed(() => store.getTodayTasks());
 .list{ display:flex; flex-direction:column; gap:.5rem; }
 .task-item{ display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:.75rem; border-radius: 12px; border:1px solid rgba(2,6,23,.08); background: rgba(2,6,23,.02); cursor:pointer; }
 .task-left{ display:flex; gap:.75rem; align-items:flex-start; }
-.check{ width:26px; height:26px; border-radius:9px; border:1px solid rgba(2,6,23,.15); background:#fff; cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.check{ width:clamp(22px, 4.8vw, 26px); height:clamp(22px, 4.8vw, 26px); border-radius:9px; border:1px solid rgba(2,6,23,.15); background:#fff; cursor:pointer; display:flex; align-items:center; justify-content:center; }
 .check-icon{ color: var(--accent); font-weight:900; }
 .task-title{ font-weight:700; }
 .task-title.done{ text-decoration:line-through; color: var(--text-muted); }
@@ -78,5 +78,10 @@ const todayTasks = computed(() => store.getTodayTasks());
 
 @media (max-width:768px){
   .task-item{ flex-direction:row; }
+}
+
+@media (max-width:420px){
+  .card{ padding:.85rem; }
+  .task-item{ padding:.65rem; gap:.75rem; }
 }
 </style>
