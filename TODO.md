@@ -1,23 +1,11 @@
-# TODO
+# TODO - Responsive UI (Personal Routine Manager)
 
-- [x] Tambahkan TODO auth + profile (rencana implementasi)
-- [x] Buat `src/stores/authStore.js` untuk simpan session & user di `localStorage`
-- [x] Tambahkan views: `LoginView.vue`, `RegisterView.vue`, `ProfileView.vue`
-- [x] Update router (`src/router/index.js`) dengan route meta + route guard
-- [x] Update `src/App.vue` agar login/register tidak memakai `SidebarLayout`
-- [x] Update `src/components/SidebarLayout.vue` (tambah link Profile + tombol Logout)
-
-- [x] Verifikasi cepat:
-  - [x] akses `/dashboard` redirect ke `/login`
-  - [x] login dengan `achraflyy` / `13Mei2004#`
-  - [x] register akun baru lalu login
-  - [x] tombol logout
-
-- [x] Perluas struktur user pada `authStore.js`: fullName, email, role, profilePicture
-- [x] Tambahkan method `changePassword` pada `authStore.js`
-- [x] Ubah `RegisterView.vue` jadi form: username, password, fullName, email, role
-- [x] Ubah `ProfileView.vue` jadi tampilan: foto profil, full name, email, role + form change password
-
-- [ ] Uji end-to-end: register -> login -> buka profile -> ubah password -> logout/login lagi
-
+## Plan (dibuat setelah inspeksi kode)
+- [ ] Standarisasi layout agar tidak overflow: aktifkan `overflow-x: hidden` di global dan pastikan container tidak memaksa lebar.
+- [ ] Perbaiki Sidebar agar pada mobile tidak memaksa kolom lebar dan tidak menambah scroll horizontal.
+- [ ] Tambahkan breakpoint untuk grid/calendar/habit/task agar selalu fit layar kecil.
+- [ ] Audit ukuran komponen “fixed” (mis: avatar 72px, input min-width 220px, check 26/28px) dan ganti ke ukuran relatif + batas max.
+- [ ] Pastikan `main.content` dan halaman tidak memakai `min-height: 100vh` yang menyebabkan double scroll.
+- [ ] Jalankan `npm run dev` dan cek di beberapa lebar (mis: 360px, 768px, 1024px) untuk memastikan tidak ada elemen berukuran berlebihan.
+- [ ] Final check: tidak ada horizontal scrolling & tampilan tetap rapi di desktop/mobile.
 
